@@ -3,15 +3,6 @@
 
 Console.Clear();
 
-int[,] Matrix = new int[3, 4];
-RecordTempMatrix(Matrix);
-Console.WriteLine($"Исходный массив");
-WriteTempMatrix(Matrix);
-SortMatrix(Matrix);
-Console.WriteLine();
-Console.WriteLine($"Отсортированный массив");
-WriteTempMatrix(Matrix);
-
 void RecordTempMatrix(int[,] TempMatrix)
 {
     for (int i = 0; i < TempMatrix.GetLength(0); i++)
@@ -53,3 +44,14 @@ void WriteTempMatrix(int[,] TempMatrix)
         Console.WriteLine();
     }
 }
+
+int[,] Matrix = new int[3, 4];
+RecordTempMatrix(Matrix);
+Console.WriteLine($"Исходный массив");
+WriteTempMatrix(Matrix);
+SortMatrix(Matrix);
+Console.WriteLine();
+Console.WriteLine($"Отсортированный массив");
+WriteTempMatrix(Matrix);
+
+
